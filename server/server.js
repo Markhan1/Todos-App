@@ -11,6 +11,8 @@ app.get("/", (req, res) => {
   res.json({ status: 200 });
 });
 
+app.use("/todos", require("./handleRequests/todosRequests"));
+
 app.listen(port, () => {
   dbo.connectToServer((err) => {
     if (err) console.error(err);
