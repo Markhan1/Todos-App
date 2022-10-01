@@ -49,19 +49,20 @@ route
       console.log(`${time} - Insufficient data to add newdDocument in "${collec}"`);
     }
     let db_connect = dbo.getDB();
-    let time = dayjs().format("HH:mm:ss:SSS");
+    let dateTime = dayjs().format("YYYY/MM/DD HH:mm:ss");
     let newDoc = {
       name: req.body.name,
       text: req.body.text,
       status: req.body.status,
       tags: req.body.tags || [],
-      date: req.body.date || time,
+      date: req.body.date || dateTime,
     };
     db_connect
       .collection(collec)
       .insertOne(newDoc, (error, result) => {
         if (error) throw error;
         res.json(result);
+        let time = dayjs().format("HH:mm:ss:SSS");
         console.log(
           `${time} - Added new document "${result.insertedId}" to "${collec}" - ip: "${req.ip}"`
         );
@@ -77,14 +78,14 @@ route
     }
     let db_connect = dbo.getDB();
     let query = { _id: ObjectId(req.params.id) };
-    let time = dayjs().format("HH:mm:ss:SSS");
+    let dateTime = dayjs().format("YYYY/MM/DD HH:mm:ss");
     let changes = {
       $set : {
         name: req.body.name,
         text: req.body.text,
         status: req.body.status,
         tags: req.body.tags || [],
-        date: req.body.date || time,
+        date: req.body.date || dateTime,
       }
     };
     db_connect
@@ -92,6 +93,7 @@ route
       .updateOne(query, changes, (error, result) => {
         if (error) throw error;
         res.json(result);
+        let time = dayjs().format("HH:mm:ss:SSS");
         console.log(
           `${time} - Updated document "${req.params.id}" from "${collec}" - ip: "${req.ip}"`
         );
@@ -107,14 +109,14 @@ route
     }
     let db_connect = dbo.getDB();
     let query = { _id: ObjectId(req.params.id) };
-    let time = dayjs().format("HH:mm:ss:SSS");
+    let dateTime = dayjs().format("YYYY/MM/DD HH:mm:ss");
     let changes = {
       $set : {
         name: req.body.name,
         text: req.body.text,
         status: req.body.status,
         tags: req.body.tags || [],
-        date: req.body.date || time,
+        date: req.body.date || dateTime,
       }
     };
     db_connect
@@ -122,6 +124,7 @@ route
       .updateOne(query, changes, (error, result) => {
         if (error) throw error;
         res.json(result);
+        let time = dayjs().format("HH:mm:ss:SSS");
         console.log(
           `${time} - Updated document "${req.params.id}" from "${collec}" - ip: "${req.ip}"`
         );
