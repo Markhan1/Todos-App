@@ -1,0 +1,53 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+table {
+  margin: 25px;
+}
+
+th,
+td {
+  padding: 5px 20px;
+  border-style: none;
+}
+
+.actionBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.actionBtns button {
+  border: none;
+  margin: 1px 5px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  color: white;
+  background-color: crimson;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#editBtn {
+  background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    transform: scale(0.6);
+    text-align: center;
+  }
+  th,
+  td {
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  table tr .tags {
+    display: none;
+  }
+}
