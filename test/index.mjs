@@ -16,8 +16,8 @@ async function getStatus() {
   }
 }
 
-const result = await getStatus();
-console.log(result);
+// const result = await getStatus();
+// console.log(result);
 
 // ###########################################################################
 // This section will help you get a list of all todo documents.
@@ -32,8 +32,8 @@ async function getAllDocs() {
   }
 }
 
-// const result = await getAllDocs();
-// console.log(result);
+const result = await getAllDocs();
+console.log(result);
 
 // ###########################################################################
 // This section will help you get a single todo documents by _id.
