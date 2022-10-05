@@ -9,14 +9,16 @@ import Create from "./Components/Create/Create";
 import AuthProvider from "./Context/AuthContext";
 import PrivateOutlet from "./Components/PrivateOutlet/PrivateOutlet";
 import Login from "./Components/Login/Login";
+import { useLocation } from "react-router-dom";
 
 import "./App.css";
 
 const App = () => {
+  const location = useLocation();
   return (
     <div className="container">
       <AuthProvider>
-        <Navbar />
+        { location.pathname !== "/login" ? <Navbar /> : <h1>Todos App</h1>}
         <Routes>
           <Route path="/" element={<PrivateOutlet />}>
             <Route path="/" exact element={<Main />} />

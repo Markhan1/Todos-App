@@ -25,7 +25,7 @@ export default function AuthProvider({ children }) {
   }
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, user => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
       setLoading(false);
     });
@@ -35,12 +35,12 @@ export default function AuthProvider({ children }) {
   const value = {
     currentUser,
     login,
-    logout
-  }
+    logout,
+  };
 
-  return(
+  return (
     <AuthContext.Provider value={value}>
-      { !loading && children }
+      {!loading && children}
     </AuthContext.Provider>
   );
 }
