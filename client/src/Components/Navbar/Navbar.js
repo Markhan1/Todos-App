@@ -18,7 +18,6 @@ const Navbar = () => {
     try {
       await logout();
       navigate("/login", { replace: true });
-
     } catch (err) {
       setError("Failed to log out.");
       console.error(err);
@@ -35,22 +34,35 @@ const Navbar = () => {
           <span>|</span>
           <NavLink to="/create">Create Todo</NavLink>
           <span>|</span>
-          <button 
-          className="logout-btn" 
-          style={{ 
-            fontSize: "1rem",
-            padding: "5px",
-            marginLeft: "5px",
-            border: "none",
-            borderRadius: "4px",
-            cursor: "pointer"
+          <button
+            className="logout-btn"
+            style={{
+              fontSize: "1rem",
+              padding: "5px",
+              marginLeft: "1rem",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
             }}
-          onClick={handleLogout}
-          disabled={loading}
+            onClick={handleLogout}
+            disabled={loading}
           >
             Log out
           </button>
-          {error && <span style={{ marginLeft:"1rem", padding: "1rem", boder: "none", boderRadius: "4px", backgroundColor: "rgb(255, 154, 154)", color: "rgb(160, 1, 1)"}}>{error}</span>}
+          {error && (
+            <span
+              style={{
+                marginLeft: "1rem",
+                padding: "1rem",
+                boder: "none",
+                boderRadius: "4px",
+                backgroundColor: "rgb(255, 154, 154)",
+                color: "rgb(160, 1, 1)",
+              }}
+            >
+              {error}
+            </span>
+          )}
         </NavMenu>
       </Nav>
     </>
