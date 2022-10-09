@@ -31,16 +31,11 @@ const Create = () => {
     if (flag === 0) return;
 
     let date = form.current.date.value;
-    if (date === "") {
-      date = null;
-    }
+    if (date === "") date = null;
 
     let tags = form.current.tags.value;
-    if (tags === "") {
-      tags = null;
-    } else {
-      tags = tags.split(",");
-    }
+    if (tags === "") tags = null;
+    else tags = tags.split(",");
 
     let body = {
       name: form.current.name.value,
