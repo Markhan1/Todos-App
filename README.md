@@ -8,7 +8,7 @@ This Project is a fully functional MERN stack (MongoDB, Express, React, Node).
 
 And it uses Firebase Authentication feature.  
 
-### The Server  
+## The Back-end Server  
 
 Create file named `config.env` in directory `server/` and add the required two variables: `ATLAS_URI`, `PORT`.  
 
@@ -22,13 +22,13 @@ ATLAS_URI=mongodb+srv://<username>:<password>@<cluster>.<id>.mongodb.net/?retryW
 PORT=5000  
 ```
 
-### The Client  
+## The Front-end Server  
 
 Go to `/client` in terminal.  
 
-and write command: `npm install`. This will install all the required dependencies, and the client server is ready to start.  
+and write command: `npm install`. It will install all the required dependencies, and the client server is ready to start.  
 
-### Initiation  
+## Initiation  
 
 Open two terminals.  
 
