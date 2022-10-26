@@ -1,5 +1,5 @@
 <p align="center">
-  "Education is not the learning of facts, but the training of the mind to think. - Albert Einstein"
+  " Education is not the learning of facts, but the training of the mind to think. - Albert Einstein "
 </p>
 
 # Todos-App
