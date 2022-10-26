@@ -16,7 +16,7 @@ Enter command `npm install`, it will install all the required dependencies.
 
 Then create a file named `config.env` in directory `server/`, and add the required two variables: `ATLAS_URI`, `PORT`.  
 
-`ATLAS_URI` is the uri link of your mongodb atlas.  
+`ATLAS_URI` is the URI link to your mongodb atlas accounts' DB connection.  
 
 `PORT` can be any port number you want (5000 is recommended).  
 
@@ -25,7 +25,7 @@ The content will look something like this:
 ATLAS_URI=mongodb+srv://<username>:<password>@<cluster>.<id>.mongodb.net/?retryWrites=true&w=majority  
 PORT=5000  
 ```  
-Replace `<username>`, `<password>`, `<cluster>` and `<id>` with your own values.  
+Replace `<username>`, `<password>`, `<cluster>` and `<id>` with your own Atlas account values.  
 
 ## Front-end Server  
 
@@ -43,7 +43,7 @@ REACT_APP_STORAGE_BUCKET=<storage bucket>
 REACT_APP_MESSAGING_SENDER_ID=<messaging id>
 REACT_APP_APP_ID=<app id>
 ```  
-Of course replace the values with your own firebase account values. (Do not keep the '<' and '>').
+Of course replace the values with your own firebase account authentication values. ( Do not keep the '<' and '>' ).
 
 ## Initiation  
 
@@ -53,6 +53,6 @@ The first terminal is in route `/server`, enter command `npm run start` or `npm 
 
 Once the server is running, the second terminal is in route `/client`, enter command `npm run start`, it will start the client server.  
 
-###### Note: Only authorized people can access your server. So make sure you have account(s) in firebase authentication (that you created and know the password).
+###### Note: Only authorized users can access your server. So make sure you have account(s) in firebase authentication ( that you created and know the password to ).
 
-Now you're all set.
+Now you're all set. God be by your side ❤️
