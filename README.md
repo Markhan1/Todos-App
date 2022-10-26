@@ -24,7 +24,8 @@ The content will look something like this:
 ```
 ATLAS_URI=mongodb+srv://<username>:<password>@<cluster>.<id>.mongodb.net/?retryWrites=true&w=majority  
 PORT=5000  
-```
+```  
+Replace `<username>`, `<password>`, `<cluster>` and `<id>` with your own values.  
 
 ## Front-end Server  
 
@@ -42,7 +43,7 @@ REACT_APP_STORAGE_BUCKET=<storage bucket>
 REACT_APP_MESSAGING_SENDER_ID=<messaging id>
 REACT_APP_APP_ID=<app id>
 ```  
-Of course replace the values with your own firebase account values.
+Of course replace the values with your own firebase account values. (Do not keep the '<' and '>').
 
 ## Initiation  
 
