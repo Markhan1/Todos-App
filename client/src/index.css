@@ -1,4 +1,5 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(200, 200, 200);
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(200, 200, 200);
 }

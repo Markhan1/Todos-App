@@ -27,7 +27,9 @@ const Navbar = () => {
   }
 
   return (
-    <>
+    <div
+      className="navbar"
+    >
       <Nav>
         <NavMenu>
           <NavLink to="/todos">Todo List</NavLink>
@@ -65,7 +67,7 @@ const Navbar = () => {
           )}
         </NavMenu>
       </Nav>
-    </>
+    </div>
   );
 };
 export default Navbar;
