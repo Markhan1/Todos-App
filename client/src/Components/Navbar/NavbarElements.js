@@ -24,9 +24,14 @@ export const NavLink = styled(Link)`
     color: #000000;
     text-decoration: underline; 
   }
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+    padding: 0 5px;
+  }
 `;
 
 export const NavMenu = styled.div`
+  /* background-color: blue; */
   display: flex;
   align-items: center;
   /* Second Nav */

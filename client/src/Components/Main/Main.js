@@ -5,11 +5,11 @@ const Main = () => {
   return (
     <>
       <div className="main-page">
-        <h2>MERN Stack</h2>
+        <h2>MERNF Stack</h2>
         <p>This app works with Mongodb, Node</p>
-        <p>Express and React.</p>
+        <p>Express, React and Firebase.</p>
         <p style={{ fontWeight: "bold", paddingTop: "1rem" }}>
-          This is still a test page.
+          Note: This is still a test page.
         </p>
       </div>
     </>

@@ -91,15 +91,15 @@ const Create = () => {
             }}
           >
             <label>
-              Name: <input type="text" name="name" className="user" />
+              Name: <input type="text" name="name" className="user" required />
             </label>
             <label>
-              Text: <textarea name="text" className="user" />
+              Text: <textarea name="text" className="user" required />
             </label>
             <label>
               Status:{" "}
               <label>
-                <input type="radio" name="status" id="open" value="open" />
+                <input type="radio" name="status" id="open" value="open" required />
                 open
               </label>
               <label>
