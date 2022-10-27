@@ -35,7 +35,7 @@ Enter command: `npm install`, it will install all the required dependencies.
 
 Then create a file named `.env.local` in directory `client/`, and write the following into the file:  
 ```
-REACT_APP_SERVER_URI=<uri to your back-end server>:5000
+REACT_APP_SERVER_URI=<uri to your back-end server (http://127.0.0.1:5000)>
 REACT_APP_FIREBASE_API_KEY=<api key>
 REACT_APP_AUTH_DOMAIN=<auth domain>
 REACT_APP_PROJECT_ID=<project id>
@@ -52,6 +52,7 @@ Open two terminals.
 The first terminal is in route `/server`, enter command `npm run start` or `npm run devStart`, it will start the DB server.  
 
 Once the server is running, the second terminal is in route `/client`, enter command `npm run start`, it will start the client server.  
+And a browser should automatically open with the client server. If not, open a browser and enter the client URI (http://127.0.0.1:3000)
 
 ###### Note: Only authorized users can access your server. So make sure you have account(s) in firebase authentication ( that you created and know the password to ).
 
