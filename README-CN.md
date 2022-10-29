@@ -14,10 +14,10 @@
 使用具有以下结构的现有数据集合：  
 ```
 {
-  name: "name",
-  text: "text",
-  status: "status",
-  tags: ["tag1", "tag2"],
+  name: "姓名",
+  text: "文本",
+  status: "地位",
+  tags: ["标签1", "标签2"],
   date: "2022/11/01 12:00:00:000"
 }
 ```  
@@ -59,7 +59,7 @@ REACT_APP_STORAGE_BUCKET=<storage bucket>
 REACT_APP_MESSAGING_SENDER_ID=<messaging id>
 REACT_APP_APP_ID=<app id>
 ```  
-当然，用您自己的 Firebase 帐户身份验证值替换这些值。 （不要保留 '<' 和 '>' ）。  
+用您自己的 Firebase 帐户身份验证值替换这些值。（不要保留 '<' 和 '>' ）。  
 
 ## 引发  
 
@@ -71,4 +71,4 @@ REACT_APP_APP_ID=<app id>
 
 注意：只有授权用户才能访问您的服务器。 因此，请确保您在 firebase 身份验证中拥有帐户（您创建并知道密码）。  
 
-现在您都准备好了。 上帝在您身边❤️
+现在您都准备好了。 上帝在您身边 ❤️
