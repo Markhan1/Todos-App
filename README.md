@@ -8,6 +8,24 @@ This Project is a fully functional MERN stack ( MongoDB, ExpressJS, ReactJS, Nod
 
 And it uses Firebase Authentication feature.  
 
+## Preparation  
+
+Make sure you have `Node.js` installed on your system: https://nodejs.org/en/download/  
+
+And you have a MongoDB Atlas account connection: https://www.mongodb.com/atlas  
+with an existing Data-Collection that has the structure:  
+```
+{
+  name: "name",
+  text: "text",
+  status: "status",
+  tags: ["tag1", "tag2"],
+  date: "2022/11/01 12:00:00:000"
+}
+```  
+
+The folder where you cloned the repository is your working folder. Go to that folder and open a terminal there.  
+
 ## Back-end Server  
 
 Go to `/server` in terminal.  
