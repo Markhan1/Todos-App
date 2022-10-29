@@ -4,7 +4,7 @@
 
 # Todos-App
 
-This Project is a fully functional MERNF stack ( MongoDB, Express JS, React JS, Node JS, Firebase Auth ).  
+This Project is a fully functional MERN stack ( MongoDB, ExpressJS, ReactJS, NodeJS ).  
 
 And it uses Firebase Authentication feature.  
 
