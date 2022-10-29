@@ -6,6 +6,24 @@
 
 它使用 Firebase 身份验证功能。 
 
+## 准备  
+
+确保您的系统上安装了 `Node.js`： https://nodejs.org/en/download/  
+
+并且您有一个 MongoDB Atlas 帐户连接： https://www.mongodb.com/atlas  
+使用具有以下结构的现有数据集合：  
+```
+{
+  name: "name",
+  text: "text",
+  status: "status",
+  tags: ["tag1", "tag2"],
+  date: "2022/11/01 12:00:00:000"
+}
+```  
+
+您克隆存储库的文件夹是您的工作文件夹。 转到该文件夹并在那里打开一个终端。  
+
 ## 后端服务器  
 
 转到终端中的`/server`。  
