@@ -52,7 +52,7 @@ Open two terminals.
 The first terminal is in route `/server`, enter command `npm run start` or `npm run devStart`, it will start the DB server.  
 
 Once the server is running, the second terminal is in route `/client`, enter command `npm run start`, it will start the client server.  
-Your browser should automatically open up the client server. If not, open your browser and enter the client URI `(http://127.0.0.1:3000)
+Your browser should automatically open up the client server. If not, open your browser and enter the client URI `(http://127.0.0.1:3000)`  
 
 ###### Note: Only authorized users can access your server. So make sure you have account(s) in firebase authentication ( that you created and know the password to ).
 
