@@ -38,10 +38,10 @@
 
 内容将如下所示：  
 ```
-ATLAS_URI=mongodb+srv://<username>:<password>@<cluster>.<id>.mongodb.net/?retryWrites=true&w=majority  
+ATLAS_URI=mongodb+srv://<用户名>:<密码>@<簇>.<ID>.mongodb.net/?retryWrites=true&w=majority  
 PORT=5000  
 ```  
-将 `<username>`、`<password>`、`<cluster>` 和 `<id>` 替换为您自己的 Atlas 帐户值。  
+将 `<用户名>`、`<密码>`、`<簇>` 和 `<ID>` 替换为您自己的 Atlas 帐户值。  
 
 ## 前端服务器  
 
@@ -51,13 +51,13 @@ PORT=5000
 
 然后在 `client/` 目录下创建一个名为 `.env.local` 的文件，并在文件中写入以下内容：  
 ```
-REACT_APP_SERVER_URI=<uri to your back-end server (http://127.0.0.1:5000)>
-REACT_APP_FIREBASE_API_KEY=<api key>
-REACT_APP_AUTH_DOMAIN=<auth domain>
-REACT_APP_PROJECT_ID=<project id>
-REACT_APP_STORAGE_BUCKET=<storage bucket>
-REACT_APP_MESSAGING_SENDER_ID=<messaging id>
-REACT_APP_APP_ID=<app id>
+REACT_APP_SERVER_URI=<后端服务器的 URI (http://127.0.0.1:5000)>
+REACT_APP_FIREBASE_API_KEY=<API 密钥>
+REACT_APP_AUTH_DOMAIN=<授权域>
+REACT_APP_PROJECT_ID=<项目编号>
+REACT_APP_STORAGE_BUCKET=<存储桶>
+REACT_APP_MESSAGING_SENDER_ID=<消息 ID>
+REACT_APP_APP_ID=<应用编号>
 ```  
 用您自己的 Firebase 帐户身份验证值替换这些值。（不要保留 '<' 和 '>' ）。  
 
