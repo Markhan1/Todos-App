@@ -17,8 +17,8 @@ mit einer bestehenden Datensammlung, die die Struktur hat:
   name: "name",
   text: "text",
   status: "status",
-  tags: ["tag1", "tag2"],
-  date: "2022/11/01 12:00:00:000"
+  stichworte: ["stichwort1", "stichwort2"],
+  datum: "2022/11/01 12:00:00:000"
 }
 ```  
 
@@ -47,7 +47,7 @@ Ersetzen Sie `<username>`, `<password>`, `<cluster>` und `<id>` durch Ihre eigen
   
 Gehen Sie im Terminal auf `/client`.  
   
-Geben Sie den Befehl ein: `npm install`, es werden alle erforderlichen Abhängigkeiten installiert.  
+Geben Sie den Befehl ein: `npm install`. Es werden alle erforderlichen Abhängigkeiten installiert.  
   
 Erstellen Sie dann eine Datei mit dem Namen `.env.local` im Verzeichnis `client/` und schreiben Sie Folgendes in die Datei:  
 ```
