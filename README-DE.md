@@ -17,8 +17,8 @@ mit einer bestehenden Datensammlung, die die Struktur hat:
   name: "name",
   text: "text",
   status: "status",
-  stichworte: ["stichwort1", "stichwort2"],
-  datum: "2022/11/01 12:00:00:000"
+  tags: ["tag1", "tag2"],
+  date: "2022/11/01 12:00:00:000"
 }
 ```  
 
