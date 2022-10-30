@@ -61,7 +61,7 @@ REACT_APP_STORAGE_BUCKET=<storage bucket>
 REACT_APP_MESSAGING_SENDER_ID=<messaging id>
 REACT_APP_APP_ID=<app id>
 ```  
-Of course replace the values with your own firebase account authentication values. ( Do not keep the '<' and '>' ).
+Replace the values with your own firebase account authentication values. ( Do not keep the '<' and '>' ).
 
 ## Initiation  
 
