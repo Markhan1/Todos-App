@@ -51,13 +51,13 @@ Geben Sie den Befehl ein: `npm install`. Es werden alle erforderlichen Abhängig
   
 Erstellen Sie dann eine Datei mit dem Namen `.env.local` im Verzeichnis `client/` und schreiben Sie Folgendes in die Datei:  
 ```
-REACT_APP_SERVER_URI=<uri to your back-end server (http://127.0.0.1:5000)>
-REACT_APP_FIREBASE_API_KEY=<api key>
-REACT_APP_AUTH_DOMAIN=<auth domain>
-REACT_APP_PROJECT_ID=<project id>
-REACT_APP_STORAGE_BUCKET=<storage bucket>
-REACT_APP_MESSAGING_SENDER_ID=<messaging id>
-REACT_APP_APP_ID=<app id>
+REACT_APP_SERVER_URI=<URI zu Ihrem Back-End-Server mit der richtigen Route (http://127.0.0.1:5000/api/v1)>
+REACT_APP_FIREBASE_API_KEY=<API-Schlüssel>
+REACT_APP_AUTH_DOMAIN=<Auth-Domäne>
+REACT_APP_PROJECT_ID=<Projekt-ID>
+REACT_APP_STORAGE_BUCKET=<Speichereimer>
+REACT_APP_MESSAGING_SENDER_ID=<Messaging-ID>
+REACT_APP_APP_ID=<App-ID>
 ```  
 Ersetzen Sie die Werte durch Ihre eigenen Firebase-Kontoauthentifizierungswerte. ( Löschen Sie die Zeichen '<' und '>' ).  
   

@@ -51,7 +51,7 @@ PORT=5000
 
 然后在 `client/` 目录下创建一个名为 `.env.local` 的文件，并在文件中写入以下内容：  
 ```
-REACT_APP_SERVER_URI=<后端服务器的 URI (http://127.0.0.1:5000)>
+REACT_APP_SERVER_URI=<具有正确路由的后端服务器的 URI (http://127.0.0.1:5000/api/v1)>
 REACT_APP_FIREBASE_API_KEY=<API 密钥>
 REACT_APP_AUTH_DOMAIN=<授权域>
 REACT_APP_PROJECT_ID=<项目编号>

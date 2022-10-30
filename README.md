@@ -53,7 +53,7 @@ Enter command: `npm install`, it will install all the required dependencies.
 
 Then create a file named `.env.local` in directory `client/`, and write the following into the file:  
 ```
-REACT_APP_SERVER_URI=<uri to your back-end server (http://127.0.0.1:5000)>
+REACT_APP_SERVER_URI=<uri to your back-end server with the correct route (http://127.0.0.1:5000/api/v1)>
 REACT_APP_FIREBASE_API_KEY=<api key>
 REACT_APP_AUTH_DOMAIN=<auth domain>
 REACT_APP_PROJECT_ID=<project id>

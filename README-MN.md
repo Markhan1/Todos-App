@@ -51,7 +51,7 @@ PORT=5000
 
 Дараа нь лавлах `client/` дотор `.env.local` нэртэй файл үүсгээд файлд дараахыг бичнэ:  
 ```
-REACT_APP_SERVER_URI=<uri өөрийн арын сервер рүү (http://127.0.0.1:5000)>
+REACT_APP_SERVER_URI=<Таны арын сервер рүү зөв чиглүүлэлтийн URI (http://127.0.0.1:5000/api/v1)>
 REACT_APP_FIREBASE_API_KEY=<api түлхүүр>
 REACT_APP_AUTH_DOMAIN=<auth domain>
 REACT_APP_PROJECT_ID=<төслийн ID>
