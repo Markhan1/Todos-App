@@ -1,22 +1,32 @@
 require("dotenv").config({ path: "./config.env" });
-
-const port = process.env.PORT;
-
 const express = require("express");
-const cors = require("cors");
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-
+const bodyParser = require("body-parser");
 const dbo = require("./db/conn");
 
-app.get("/", (req, res) => {
-  res.json({ status: 200 });
+// Create express app
+const app = express();
+
+// Setup server port
+const port = process.env.PORT;
+
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// parse requests of content-type - application/json
+app.use(bodyParser.json());
+
+// define a root route
+app.get('/', (req, res) => {
+  res.status(200);
 });
 
-app.use("/todos", require("./handleRequests/todosRequests"));
+// Require todos routes
+const todosRoutes = require('./src/routes/todos.routes');
 
+// using a middleware
+app.use("/api/v1/todos", todosRoutes);
+
+// listen for requests
 app.listen(port, () => {
   dbo.connectToServer((err) => {
     if (err) console.error(err);
