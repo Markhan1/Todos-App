@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
-const port = 5050;
-const mainUri = `http://192.168.0.134:${port}`;
+const port = 5000;
+const mainUri = `http://127.0.0.1:${port}`;
 const fetchHeaders = { "Content-Type": "application/json" };
 
 // ###########################################################################
@@ -23,7 +23,7 @@ async function getStatus() {
 // This section will help you get a list of all todo documents.
 async function getAllDocs() {
   try {
-    const response = await fetch(mainUri+"/todos", { method: "GET" });
+    const response = await fetch(mainUri+"/api/v1/todos", { method: "GET" });
     const result = await response.json();;
     return result;
   } catch (error) {
@@ -32,14 +32,14 @@ async function getAllDocs() {
   }
 }
 
-const result = await getAllDocs();
-console.log(result);
+// const result = await getAllDocs();
+// console.log(result);
 
 // ###########################################################################
 // This section will help you get a single todo documents by _id.
 async function getOneDoc(id) {
   try {
-    const response = await fetch(mainUri+"/todos/"+id, { method: "GET" });
+    const response = await fetch(mainUri+"/api/v1/todos/"+id, { method: "GET" });
     const result = await response.json();;
     return result;
   } catch (error) {
@@ -48,14 +48,14 @@ async function getOneDoc(id) {
   }
 }
 
-// const result = await getOneDoc("63341638961b54ae04aa7a63");
+// const result = await getOneDoc("635e4104e325cd346daa655d");
 // console.log(result);
 
 // ###########################################################################
 // This section will help you create a new todo document.
 async function createNewDoc(body) {
   try {
-    const response = await fetch(mainUri+"/todos/add", {
+    const response = await fetch(mainUri+"/api/v1/todos/add", {
       method: "POST",
       headers: fetchHeaders,
       body: JSON.stringify(body),
@@ -71,7 +71,7 @@ async function createNewDoc(body) {
 //   name: "Swag Messiah",
 //   text: "Legalize Nuclear Bombs.",
 //   status: "open",
-//   tags: ["nuclear", "bomb", "legal"],
+//   tags: ["legalize", "nuclear", "bomb"],
 // }
 // const result = await createNewDoc(body);
 // console.log(result);
@@ -80,7 +80,7 @@ async function createNewDoc(body) {
 // This section will help you update a single document by _id.
 async function updateOneDoc(id, body) {
   try {
-    const response = await fetch(mainUri+"/todos/update/"+id, {
+    const response = await fetch(mainUri+"/api/v1/todos/update/"+id, {
       method: "POST",
       headers: fetchHeaders,
       body: JSON.stringify(body),
@@ -93,11 +93,11 @@ async function updateOneDoc(id, body) {
   }
 }
 
-// const id = "6337e0ae3578b5fc5c30f041"
+// const id = "635e4104e325cd346daa655d"
 // const body = {
 //   name: "Swag Messiah",
 //   text: "Legalize Nuclear Bombs.",
-//   status: "open",
+//   status: "closed",
 //   tags: ["nuclear", "bomb", "legal"],
 //   date: "2022/10/01 14:57:00",
 // }
@@ -108,7 +108,7 @@ async function updateOneDoc(id, body) {
 // This section will help you delete a single document by _id.
 async function deleteOneDoc(id) {
   try {
-    const response = await fetch(mainUri+"/todos/"+id, {
+    const response = await fetch(mainUri+"/api/v1/todos/"+id, {
       method: "DELETE"
     });
     const result = await response.json();
@@ -119,6 +119,6 @@ async function deleteOneDoc(id) {
   }
 }
 
-// const id = "6337e3aa63690c3c65685b88";
+// const id = "6334162e961b54ae04aa7a34";
 // const result = await deleteOneDoc(id);
 // console.log(result);
