@@ -6,6 +6,12 @@ const dbo = require("./db/conn");
 // Create express app
 const app = express();
 
+// require CORS header ‘Access-Control-Allow-Origin’
+const cors = require("cors");
+
+// add cors to app
+app.use(cors());
+
 // Setup server port
 const port = process.env.PORT;
 
