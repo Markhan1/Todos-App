@@ -65,14 +65,14 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .container-create .body {
-    width: 80%;
+    width: 90%;
   }
   .container-create .body > form {
     font-size: 14px;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
   }
   .container-create .body > form label:nth-child(3) {
     white-space: nowrap;

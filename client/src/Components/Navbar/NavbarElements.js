@@ -24,8 +24,8 @@ export const NavLink = styled(Link)`
     color: #000000;
     text-decoration: underline; 
   }
-  @media screen and (max-width: 400px) {
-    font-size: 14px;
+  @media screen and (max-width: 500px) {
+    font-size: 13px;
     padding: 0 5px;
   }
 `;
